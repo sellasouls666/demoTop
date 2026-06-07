@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DemoForm/DemoForm.csproj" Id="07551ee5-81f6-47fd-bd4a-0a9b9630a0eb" />
+  <Project Path="DemoLib/DemoLib.csproj" Id="bb04f054-17f6-4760-9261-7109f49c8eff" />
+</Solution>
