@@ -122,6 +122,7 @@ namespace DemoForm
                     upScaleCountButton.Enabled = true;
                     downScaleCountButton.Enabled = true;
                     filtrBox.Enabled = true;
+                    ordersButton.Enabled = true;
                 }
                 else
                 {
@@ -129,6 +130,7 @@ namespace DemoForm
                     upScaleCountButton.Enabled = false;
                     downScaleCountButton.Enabled = false;
                     filtrBox.Enabled = false;
+                    ordersButton.Enabled = false;
                 }
             }
             else
@@ -139,6 +141,7 @@ namespace DemoForm
                 filtrBox.Enabled = false;
                 addButton.Enabled = false;
                 deleteButton.Enabled = false;
+                ordersButton.Enabled = false;
             }
         }
 
@@ -234,6 +237,12 @@ namespace DemoForm
                 products_ = productService_.GetProducts();
                 SearchAndFilter(searchBox.Text);
             }
+        }
+
+        private void ordersButton_Click(object sender, EventArgs e)
+        {
+            OrdersForm ordersForm = new OrdersForm(orderService_, productService_, currentUser_);
+            ordersForm.Show();
         }
     }
 }

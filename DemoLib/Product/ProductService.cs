@@ -34,5 +34,18 @@ namespace DemoLib.Product
         {
             productRepository_.DeleteProduct(product);
         }
+
+        public bool CheckArticul(string articul)
+        {
+            List<Product> products = productRepository_.GetProducts();
+            foreach (Product product in products)
+            {
+                if (product.Articul == articul)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }

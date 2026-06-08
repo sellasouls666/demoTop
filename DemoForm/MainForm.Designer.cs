@@ -39,6 +39,7 @@
             this.addButton = new System.Windows.Forms.Button();
             this.productCard = new DemoForm.ProductCard();
             this.deleteButton = new System.Windows.Forms.Button();
+            this.ordersButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -155,11 +156,23 @@
             this.deleteButton.UseVisualStyleBackColor = false;
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
+            // ordersButton
+            // 
+            this.ordersButton.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.ordersButton.Location = new System.Drawing.Point(1050, 5);
+            this.ordersButton.Name = "ordersButton";
+            this.ordersButton.Size = new System.Drawing.Size(96, 35);
+            this.ordersButton.TabIndex = 11;
+            this.ordersButton.Text = "Заказы";
+            this.ordersButton.UseVisualStyleBackColor = false;
+            this.ordersButton.Click += new System.EventHandler(this.ordersButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1379, 405);
+            this.Controls.Add(this.ordersButton);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.filtrBox);
@@ -194,6 +207,7 @@
         private System.Windows.Forms.ComboBox filtrBox;
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.Button ordersButton;
     }
 }
 

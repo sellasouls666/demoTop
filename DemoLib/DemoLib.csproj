@@ -86,9 +86,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Order\Order.cs" />
     <Compile Include="Order\OrderProducts.cs" />
     <Compile Include="Order\OrderRepository.cs" />
     <Compile Include="Order\OrderService.cs" />
+    <Compile Include="Order\Pickup.cs" />
     <Compile Include="Product\Product.cs" />
     <Compile Include="Product\ProductRepository.cs" />
     <Compile Include="Product\ProductService.cs" />
